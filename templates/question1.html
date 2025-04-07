@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 1: Conflict</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>How do you handle conflict?</h2>
+        <form action="/question1" method="POST">
+            <input type="radio" name="conflict" value="avoid" required> Avoid it<br>
+            <input type="radio" name="conflict" value="fight"> Face it head-on<br>
+            <input type="radio" name="conflict" value="talk"> Talk it out<br><br>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>

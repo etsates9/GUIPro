@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 2: Hangout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Where do you prefer to hang out?</h2>
+        <form action="/question2" method="POST">
+            <input type="radio" name="hangout" value="solo" required> Alone in peace<br>
+            <input type="radio" name="hangout" value="group"> With a big group<br>
+            <input type="radio" name="hangout" value="animals"> With animals or in nature<br><br>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>

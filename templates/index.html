@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Minecraft Mob Quiz!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, I'm <span style="color: #FFEB3B;">Ejay T. Sates</span> 👋</h1>
+        <p>This is my <strong>GUIPRO Flask assignment</strong> — let's have some fun with Minecraft!</p>
+
+        <h2>Welcome to the Minecraft Mob Quiz!</h2>
+        <img src="{{ url_for('static', filename='images/minecraft.jpg') }}" alt="Minecraft Welcome" class="minecraft-jpg">
+        <p>Discover which Minecraft mob matches your personality! Click below to begin.</p>
+        <a href="/question1" class="btn">Start Quiz</a>
+    </div>
+</body>
+</html>

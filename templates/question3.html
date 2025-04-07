@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 3: Vibe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Pick a vibe:</h2>
+        <form action="/question3" method="POST">
+            <input type="radio" name="vibe" value="chill" required> Chill<br>
+            <input type="radio" name="vibe" value="chaotic"> Chaotic<br>
+            <input type="radio" name="vibe" value="nature"> Nature-loving<br><br>
+            <button type="submit">Finish</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Minecraft Mob</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container result-container">
+        <h1>You are: {{ mob }}!</h1>
+        <img src="{{ image }}" alt="{{ mob }}" class="mob-img">
+        <p>{{ description }}</p>
+        <a href="/" class="btn">Try Again</a>
+    </div>
+</body>
+</html>
