@@ -1,1 +1,1 @@
-# GUIPro
+This is a simple Flask web app that lets users find out which Minecraft mob matches their personality. Through a short quiz with fun questions, the app gives a result based on their choices—complete with a description and mob image.
