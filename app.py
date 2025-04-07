@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-# Store answers across multiple pages
 answers = {}
 
 @app.route('/')
@@ -32,7 +31,6 @@ def question3():
 
 @app.route('/result')
 def result():
-    # Determine which mob matches the answers
     conflict = answers.get('conflict')
     hangout = answers.get('hangout')
     vibe = answers.get('vibe')
